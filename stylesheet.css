@@ -56,8 +56,29 @@ span {
   font-size: 1.5vw;
 }
 
+section {
+  padding-left: 10vw;
+  padding-right: 10vw;
+}
+
+section article {
+  margin: 1vw;
+}
+
+section article p {
+  text-align: left;
+}
+
 /* Hover */
 a:hover {
   transition: var(--quick);
   color: var(--active);
+}
+
+.hidden {
+  display: none;
+}
+
+.category:hover + .hidden {
+  display: block;
 }
