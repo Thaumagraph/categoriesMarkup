@@ -1,1 +1,63 @@
+:root {
+  --background-color: #303030;
+  --font-color: #e3e3e3;
+  --active: #00ffff;
+  --accent: #616161;
 
+  --quick: 0.3s;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  text-align: center;
+}
+
+body {
+  background-color: var(--background-color);
+  color: var(--font-color);
+  font-family: sans-serif;
+}
+
+nav {
+}
+
+nav ul {
+  display: flex;
+  justify-content: space-evenly;
+  list-style: none;
+}
+
+nav ul li {
+  padding: 1vw;
+  font-size: 2.5vw;
+}
+
+nav ul li a {
+  transition: var(--quick);
+  color: var(--font-color);
+  text-decoration: none;
+}
+
+nav li ul {
+  display: block;
+  background-color: #3c3c3c;
+  /* background-color: darkblue; */
+}
+
+nav li ul li {
+  font-size: 1vw;
+}
+
+span {
+  border-bottom: var(--accent) 0.3vw solid;
+  font-size: 1.5vw;
+}
+
+/* Hover */
+a:hover {
+  transition: var(--quick);
+  color: var(--active);
+}
